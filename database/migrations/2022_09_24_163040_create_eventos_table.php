@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('hora');
             $table->string('lugar');
             $table->string('tipo_evento');
+            $table->string('codigo');
             $table->unsignedBigInteger('id_org');
             $table->unsignedBigInteger('id_fotog');
 

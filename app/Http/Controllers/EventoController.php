@@ -6,6 +6,7 @@ use App\Models\Evento;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 class EventoController extends Controller
 {
@@ -37,6 +38,12 @@ class EventoController extends Controller
 
     }
 
+    public function generarCodigo()
+    {
+        //Genera un código aleatorio de 8 caracteres usando la función Str::random()
+        return Str::random(6);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -52,12 +59,12 @@ class EventoController extends Controller
         $evento->lugar = $request->input('lugar');
         $evento->tipo_evento = $request->input('tipo_evento');
         $id =  DB::table('organizadors')->where('id_user', '=', auth()->user()->id)->value('id_organizador');
+        $evento->codigo = $this->generarCodigo();
         $evento->id_org = $id;
         $evento->id_fotog = $_POST['select'];
         $evento->save();
         return redirect()->route('eventosOrganizador');
     }
-
 
     public function all(){
        /* $eventos = DB::select('select * from eventos INNER JOIN organizadors

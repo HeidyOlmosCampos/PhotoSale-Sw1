@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Evento extends Model
+class EventoCliente extends Model
 {
-    protected $primaryKey = 'id_evento';
     use HasFactory;
+    protected $table = 'eventosclientes';
+    protected $primaryKey = 'id_evento_cliente';
     protected $fillable = [
-        'nombre_evento', 'fecha', 'hora', 'lugar', 'tipo_evento', 'codigo', 'id_org', 'id_fotog'
+        'fecha', 'id_cliente', 'id_evento'
     ];
 }
