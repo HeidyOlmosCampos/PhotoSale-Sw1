@@ -50,7 +50,7 @@ class FotoController extends Controller
 
 
             $client = new RekognitionClient([
-                'region' => env('AWS_DEFAULT_REGION'),
+                'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
                 'version' => 'latest'
             ]);
 
