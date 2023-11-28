@@ -64,14 +64,14 @@ class FotoController extends Controller
                     ],
                     'TargetImage' => [
                         'S3Object' => [
-                            'Bucket' => 'sw77-bucket-s3',
+                            'Bucket' => 's3-imageshop',
                             'Name' => $u->profile_photo_path,
                         ],
                     ],
                 ]);
                 $imageFlu = $request->file('image');
                 $y = time() . $imageFlu->getClientOriginalName();
-                $y = 'ec2-18-233-99-32.compute-1.amazonaws.com/Secret/'.$y;
+                $y = 'ec2-3-90-222-5.compute-1.amazonaws.com/Secret/'.$y;
                 $x = $y;
 
                 $d = $result->get('FaceMatches');
