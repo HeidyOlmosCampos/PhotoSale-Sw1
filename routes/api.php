@@ -28,9 +28,11 @@ Route::post('store',[App\Http\Controllers\API\Cursos_Controller::class, 'store']
 //Login del user cliente
 Route::post('login',[App\Http\Controllers\API\RegisterController::class, 'login']);
 
-
+// Unirse a un evento con el codigo
 Route::post('unirseEvento',[App\Http\Controllers\EventoClienteController::class, 'store']);
 
+//Login del user cliente
+Route::post('foto',[App\Http\Controllers\API\RegisterController::class, 'foto']);
 
 
 
