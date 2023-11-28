@@ -79,7 +79,7 @@ class FotoController extends Controller
                 if ($d != null) {
                     $d = $d[0];
                     $d = $d['Similarity'];
-                    if ($d >= 98) {
+                    if ($d >= 90) {
                         printf('Enviar notificacion= ' . $u->name);
                         $SERVER_API_KEY = 'AAAAauDoHxc:APA91bE0sD4v8Aw1sZJ0P-ddoYFGNM6TVGCBHo9Wq-CQ3jOcoFaZrhm0ZmRWNZRkCHV7doWq7YifeKZCtLLTToq6wICvI_KR1TNqvjAN1OuIHSuBZrbcSj9UZdqlowGfhu8SSYx139QG';
                         //$token = 'fACZ1wjCSrmZocvtjyPIfZ:APA91bGXmIcHPd6dFt-AtQa0XzPIXStT14yY_8CGVTLZHTHAbNrrlJGfrUp5wqK-p7hmkT9E9N9I9eEOJxI3UmPWaOTcPwLBu9O-BPIusQfSg7FdyRl1zau4B5IISomzQR1tHy6SY1A-';
