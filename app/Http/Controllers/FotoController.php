@@ -65,7 +65,8 @@ class FotoController extends Controller
                     'TargetImage' => [
                         'S3Object' => [
                             'Bucket' => 's3-imageshop',
-                            'Name' => $u->profile_photo_path,
+                            'Name' => '1701177596IMG_20230716_225000.jpg',
+                            // 'Name' => $u->profile_photo_path,
                         ],
                     ],
                 ]);
