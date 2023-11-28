@@ -64,7 +64,7 @@ class FotoController extends Controller
                     ],
                     'TargetImage' => [
                         'S3Object' => [
-                            'Bucket' => 'sw77-bucket-s3',
+                            'Bucket' => 's3-imageshop',
                             'Name' => $u->profile_photo_path,
                         ],
                     ],
