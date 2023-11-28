@@ -42,7 +42,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::resource('posts', \App\Http\Controllers\PostController::class);
 });
 
-////LOGIN
+///LOGIN
 
 Route::post('/loginn',[LoginController::class, 'login'])
 ->name('loginn');
@@ -138,7 +138,7 @@ Route::get('/noti', function () {
         ],
 
     ];
-    
+
     $dataString = json_encode($data);
 
     $headers = [

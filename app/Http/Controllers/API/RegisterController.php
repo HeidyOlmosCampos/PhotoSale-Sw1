@@ -47,7 +47,7 @@ class RegisterController extends BaseController
         $user->password = bcrypt($atributos['password']);
         $user->tokenFirebase = $atributos['tokenFirebase'];
         $user->save();
-        
+
 
         $cliente = new Cliente();
         $cliente->photo = "s";

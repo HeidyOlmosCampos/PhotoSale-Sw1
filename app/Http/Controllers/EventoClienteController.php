@@ -51,7 +51,8 @@ class EventoClienteController extends Controller
             $eventoCliente->id_evento = $idEvento;
             $eventoCliente->save();
 
-            return response()->json('nice', 200);
+
+            return response()->json('Unido a evento', 200);
         } else {
             return response()->json('failed', 404);
         }

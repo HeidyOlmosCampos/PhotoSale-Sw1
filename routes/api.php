@@ -19,11 +19,29 @@ use Illuminate\Support\Facades\Route;
 });
 */
 
+//registrar usuario
 Route::post('register',[App\Http\Controllers\API\RegisterController::class, 'register']);
+
+//Almacenar imagen
 Route::post('store',[App\Http\Controllers\API\Cursos_Controller::class, 'store']);
+
+//Login del user cliente
 Route::post('login',[App\Http\Controllers\API\RegisterController::class, 'login']);
 
 
+Route::post('unirseEvento',[App\Http\Controllers\EventoClienteController::class, 'store']);
+
+
+
+
+
+
+
+
+
+
+
+// Middelware('auth:api'): Para verificar que estoy autenticado
 Route::middleware('auth:api')
     ->post('logout',[App\Http\Controllers\API\RegisterController::class, 'logout']);
 Route::middleware('auth:api')
