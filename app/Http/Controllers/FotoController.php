@@ -50,7 +50,7 @@ class FotoController extends Controller
 
 
             $client = new RekognitionClient([
-                'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+                'region' => env('us-east-1'),
                 'version' => 'latest'
             ]);
 
@@ -64,7 +64,7 @@ class FotoController extends Controller
                     ],
                     'TargetImage' => [
                         'S3Object' => [
-                            'Bucket' => 's3-imageshop',
+                            'Bucket' => 'sw77-bucket-s3',
                             'Name' => $u->profile_photo_path,
                         ],
                     ],
