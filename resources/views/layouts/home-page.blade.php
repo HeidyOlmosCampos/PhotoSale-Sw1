@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="hidden lg:block lg:w-2/3" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
-            <div class="h-full object-cover" style="background-image: url(https://i.pinimg.com/564x/39/54/cc/3954cc9e91086b1f55232bb5f486d45d.jpg)">
+            <div class="h-full object-cover" style="background-image: url(https://i.pinimg.com/564x/81/35/9a/81359aa5a84ea2a64fddba641a4522f5.jpg)">
                 <div class="h-full bg-black opacity-25"></div>
             </div>
         </div>
