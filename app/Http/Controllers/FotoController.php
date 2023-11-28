@@ -79,6 +79,7 @@ class FotoController extends Controller
                 if ($d != null) {
                     $d = $d[0];
                     $d = $d['Similarity'];
+                    dd($d);
                     if ($d >= 60) {
                         printf('Enviar notificacion= ' . $u->name);
                         $SERVER_API_KEY = 'AAAAauDoHxc:APA91bE0sD4v8Aw1sZJ0P-ddoYFGNM6TVGCBHo9Wq-CQ3jOcoFaZrhm0ZmRWNZRkCHV7doWq7YifeKZCtLLTToq6wICvI_KR1TNqvjAN1OuIHSuBZrbcSj9UZdqlowGfhu8SSYx139QG';
